@@ -2,20 +2,22 @@
 //
 
 #include <iostream>
-#include "list.h"
+//#include "list.h"
+#include "Stack.h"
 using namespace std;
 
 int main()
 {
-	UnSortedList myList = UnSortedList();
+	Stack myStack = Stack();
+	myStack.Push(10);
+	myStack.Push(21);
+	myStack.Push(99);
 
-	myList.Additem(4);
-	myList.Additem(10);
-	myList.Additem(5);
+	myStack.PrintStack();
 
-	myList.DeleteItem(10);
+	myStack.Pop();
+	
+	myStack.PrintStack();
 
-	for (int i = 0; i < myList.GetLength(); i++) {
-		cout << endl;
-	}
+	
 }

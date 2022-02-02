@@ -1,5 +1,5 @@
 #pragma once
-typedef ItemType;
+typedef int ItemType;
 
 struct NodeType {
 	ItemType info;
